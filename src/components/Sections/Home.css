@@ -12,151 +12,21 @@
       url(../../assets/background.png);
     background-size: cover;
     background-position: bottom;
-    padding: 3rem;
+    /* padding: 3rem; */
   }
   
   .header__heading--box {
     display: flex;
+    height: 100%;
     justify-content: space-around;
+    align-items: center;
   }
+
   
-  .header__heading-box--card {
-    width: 25rem;
-    height: 30rem;
-    background-color: #f5f5f5;
-    border: 1px solid #f5f5f5;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-    border-radius: 2rem;
+  @media only screen and (max-width: 600px) {
+    .home {
+      height: 80rem;
+      width: 100%;
+      padding: 1rem;
+    }
   }
-  
-  .header__heading-box--about {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    flex: 0 60%;
-    align-items:  flex-start;
-  }
-  
-  .header__post--title {
-    color: #00b5cc;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 2em;
-  }
-  
-  .header__post--text {
-    color: white;
-    margin: 1rem 0;
-    font-size: 1.2rem;
-    text-align: left;
-  }
-  
-  .avatar {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    border: 1rem solid #8496b0;
-    margin: 2.5rem;
-  }
-  
-  
-  .rotate,
-  .e-mail {
-    font-size: 1.4rem;
-    color: #00b5cc;
-    font-weight: bold;
-  }
-  
-  .rotating.flip {
-    position: relative;
-  }
-  
-  .rotating .front,
-  .rotating .back {
-    left: 0;
-    top: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .btn {
-     padding: .5rem 1rem;
-     font-weight: bold;
-     font-size: 1.4rem;
-     border-radius: 2px;
-     margin-right: .2rem;
-  }
-  
-  .btn-seemore {
-    background-color: #8496b0;
-    border: 2px solid #8496b0;
-    color: #fff;
-  }
-  
-  .btn-cv {
-    background-color: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-  }
-  
-  .btn-portfolio:hover {
-    background-color: #8496b0;
-    color: #fff;
-  }
-  
-  .btn-seemore:hover {
-    background-color: #fff;
-    color:rgb(136, 132, 176);
-  }
-  
-  .btn-cv:hover {
-    background-color: #fff;
-    color: #8496b0;
-  }
-  
-  .social-media {
-    list-style-type: none;
-  }
-  
-  .social-media li {
-    font-family: FontAwesome;
-    color: #8496b0;
-    display: inline-block;
-    margin-right: 2rem;
-    font-size: 2rem;
-  }
-  
-  .social-media li:last-child {
-    margin-right: 0;
-  }
-  
-  .social-media li a {
-    color: #8496b0;
-    text-decoration: none;
-  }
-  
-  .fa-facebook:hover {
-    color: #3b5998;
-  }
-  
-  .fa-instagram:hover {
-    color: #517fa4;
-  }
-  
-  .fa-linkedin:hover {
-    color: #0077b5;
-  }
-  
-  .fa-github:hover {
-    color: #bd081c;
-  }
-  
-  .fa-dribbble:hover {
-    color: #ea4c89;
-  }
-  
-  a {
-    color: #00b5cc ;
-    font-weight: bold;
-  }
-  

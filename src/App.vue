@@ -6,13 +6,13 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 import Navigation from './components/Navigation/Navigation.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld, 
+    // HelloWorld, 
     Navigation
   }
 }
@@ -26,6 +26,10 @@ export default {
   box-sizing: border-box;
 }
 
+ 
+ 
+
+  
 
 
 #app {
