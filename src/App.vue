@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <Navigation />
-     <router-view/>
+  <div id="app" class="row">
+    <Navigation class="col-xs-2"/>
+    <router-view class="col"/>
   </div>
 </template>
 
@@ -26,10 +26,6 @@ export default {
   box-sizing: border-box;
 }
 
- 
- 
-
-  
 
 
 #app {

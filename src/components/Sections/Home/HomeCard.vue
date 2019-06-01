@@ -1,109 +1,105 @@
 <template>
-  <div class="header__heading-box--card">
-    <img src="../../../assets/2.jpg" alt="Avatar image" class="avatar">
-    <br>
-    <span class="rotate">Front end Engineer</span>
+  <div class="home-card">
+    <h1 class="title" >
+      <div class="bracket bracket-left" >/*</div>
+      <div class="title-text">
+        Helloo!
+        <span>I'm</span>
+        <span class="name" >{{name}}</span>
+      </div>
+      <div class="bracket bracket-right">*/</div>
+    </h1>
     <hr>
     <div>
-      <ul class="social-media">
-        <li>
-          <a href="https://www.linkedin.com/in/alexandra-barka-57075361/">
-            <span class="fab fa-linkedin"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/aLe3ouLa">
-            <span class="fab fa-github"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://dribbble.com/aLe3andra">
-            <span class="fab fa-dribbble"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/aLe3ouLa">
-            <span class="fab fa-facebook"></span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/ale3oula/">
-            <span class="fab fa-instagram"></span>
-          </a>
-        </li>
+      <ul class="description">
+        <li> <img src="../../../assets/desc_code.png" width="100" alt="">
+          Frontend Engineer</li>
+        <li><img src="../../../assets/desc_cafe.png" width="100"  alt="">Coffee Junkie</li>
+        <li><img src="../../../assets/desc_travel.png" width="100"  alt="">Travel Lover</li>
       </ul>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: "HomeCard"
+  name: "HomeCard",
+  data() {
+    return {
+      name: "Alexandra"
+    }
+  }
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.header__heading-box--card {
-  width: 25rem;
-  height: 30rem;
-  background-color: #f5f5f5;
-  border: 1px solid #f5f5f5;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-  border-radius: 1rem;
+
+.home-card {
+  width: 100%;
+  padding: 1rem;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 1rem;
 }
 
-.avatar {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-  border: 1rem solid #8496b0;
-  margin: 2.5rem;
+.bracket {
+    font-size: 3rem;
+    font-weight: 400;
 }
 
-.rotate,
-.e-mail {
-  font-size: 1.4rem;
-  color: #00b5cc;
-  font-weight: bold;
+.bracket-left {
+    padding-right: 1rem;
 }
 
-.social-media {
-  list-style-type: none;
+.bracket-right {
+    padding-left: 1rem;
 }
 
-.social-media li {
-  font-family: FontAwesome;
-  color: #8496b0;
-  display: inline-block;
-  margin-right: 2rem;
-  font-size: 2rem;
+.title-text {
+    font-size: 3rem;
+    /* padding-top: 18px; */
 }
 
-.social-media li:last-child {
-  margin-right: 0;
+.name {
+    background: #f39c12;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 7px;
 }
 
-.social-media li a {
-  color: #8496b0;
-  text-decoration: none;
+.description {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+ font-weight: bold;
+ list-style: none;
 }
 
-.fa-facebook:hover {
-  color: #3b5998;
+.description li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
-.fa-instagram:hover {
-  color: #517fa4;
+.description li:first-child {
+  border-bottom: 3px solid #f39c12;
 }
 
-.fa-linkedin:hover {
-  color: #0077b5;
+.description li:nth-child(2) {
+  border-bottom: 3px solid #913d88;
+}
+.description li:nth-child(3) {
+  border-bottom: 3px solid #66cc99;
 }
 
-.fa-github:hover {
-  color: #bd081c;
+.description li:hover {
+  border-bottom: 3px solid pink;
 }
 
-.fa-dribbble:hover {
-  color: #ea4c89;
-}
+
 </style>

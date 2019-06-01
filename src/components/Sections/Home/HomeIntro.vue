@@ -1,10 +1,7 @@
 <template>
   <div class="header__heading-box--about">
-          <span class="header__post--title">
-            Heeeello! I'm Alexandra.
-          </span>
-
           <div class="header__post--text">
+            <h4>Summary</h4>
             I am a Frontend Engineer with experience building software and web applications.
             I enjoy creating simple and creative user interfaces using modern technologies.
             I’m excited about learning new skills as well as improving my current.
@@ -27,40 +24,27 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-  .header__heading-box--about {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    flex: 0 55%;
-    align-items:  flex-start;
-    padding: .5rem;
-  }
-  
-  .header__post--title {
-    color: #00b5cc;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 2em;
-  }
-  
   .header__post--text {
-    color: white;
-    margin: 1rem 0;
-    font-size: 1.2rem;
+    width: 95%;
+    margin: .5rem;
+    padding: 1rem;
+    font-size: 1.1rem;
     text-align: left;
     text-justify: center;
-  }
-  
-  .btn-seemore {
-    background-color: #8496b0;
-    border: 2px solid #8496b0;
+    border-top: 5px solid #f39c12;
+    background-color: rgba(0,0,0,0.6);
     color: #fff;
   }
   
+  .btn-seemore {
+    background-color: #fff;
+    border: 2px solid #f39c12;
+    
+  }
+  
   .btn-cv {
-    background-color: transparent;
-    border: 2px solid #fff;
+    background-color: #f39c12;
+    border: 2px solid #f39c12;
     color: #fff;
   }
   
@@ -70,7 +54,7 @@ export default {
   }
   
   .btn-seemore:hover {
-    background-color: #fff;
+    background-color: #f39c12;
     color:rgb(136, 132, 176);
   }
   
@@ -80,7 +64,7 @@ export default {
   }
   
    a {
-    color: #00b5cc ;
+    color: #f39c12 ;
     font-weight: bold;
   }
 
@@ -94,6 +78,8 @@ export default {
 
   .header_buttons {
       display: flex;
+      justify-content: space-around;
+      margin-top: 1rem;
   }
 
    @media only screen and (max-width: 600px) {

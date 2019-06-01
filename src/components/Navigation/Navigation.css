@@ -1,19 +1,66 @@
 .router-link-active {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.bg-primary {
-    background-color: #2c3e50 !important;
+.wrapper {
+  display: flex;
+  /* width: 100%; */
+  align-items: stretch;
 }
 
-
-.nav-brand {
-    color: white;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: bold;
+#sidebar {
+  min-width: 260px;
+  max-width: 260px;
+  min-height: 100vh;
+  background-color: #202026;
+  color: #f39c12;
 }
 
-.navbar-col {
-    display: flex; justify-content: center;
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #8496b0;
+}
+
+.social-media {
+  list-style-type: none;
+}
+
+.social-media li {
+  font-family: FontAwesome;
+  color: #8496b0;
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.social-media li:last-child {
+  margin-right: 0;
+}
+
+.social-media li a {
+  color: #8496b0;
+  text-decoration: none;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-instagram:hover {
+  color: #517fa4;
+}
+
+.fa-linkedin:hover {
+  color: #0077b5;
+}
+
+.fa-github:hover {
+  color: #bd081c;
+}
+
+.fa-dribbble:hover {
+  color: #ea4c89;
 }

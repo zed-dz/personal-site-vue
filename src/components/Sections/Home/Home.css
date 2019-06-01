@@ -1,32 +1,13 @@
 .home {
-    height: 95vh;
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(rgba(30, 46, 61, 1)),
-        to(rgba(30, 46, 61, 0.8))
-      ),
-      url(../../../assets/background.png);
-    background-image: linear-gradient(rgba(30, 46, 61, 1), rgba(30, 46, 61, 0.8)),
-      url(../../../assets/background.png);
-    background-size: cover;
-    background-position: bottom;
-    /* padding: 3rem; */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
   }
   
   .header__heading--box {
     display: flex;
-    height: 100%;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    max-height: 100vh;
+    min-height: 100vh;
   }
 
-  
-  @media only screen and (max-width: 600px) {
-    .home {
-      height: 80rem;
-      width: 100%;
-      padding: 1rem;
-    }
-  }
