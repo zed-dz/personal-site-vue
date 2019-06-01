@@ -1,6 +1,6 @@
 <template>
   <div class="header__heading-box--card">
-    <img src="../../assets/2.jpg" alt="Avatar image" class="avatar">
+    <img src="../../../assets/2.jpg" alt="Avatar image" class="avatar">
     <br>
     <span class="rotate">Front end Engineer</span>
     <hr>
