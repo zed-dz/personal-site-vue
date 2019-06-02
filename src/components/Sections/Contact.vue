@@ -62,7 +62,7 @@ export default {
 .border {
   width: 55px;
   height: 8px;
-  background: #ff6583;
+  background: #f39c12;
   border-radius: 20px;
   margin-top: 8px;
 }
