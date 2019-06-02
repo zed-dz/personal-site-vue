@@ -106,6 +106,7 @@ export default {
 .coding-skills {
   display: flex;
   align-items: center;
+      flex-wrap: wrap;
 }
 
 .skill-section {

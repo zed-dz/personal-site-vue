@@ -2,7 +2,7 @@
   <div class="experience-card">
     <div class="row">
       <div class="col">
-        <img v-bind:src="work.image" alt width="80">
+        <img v-bind:src="work.image" alt="Work Image" width="80">
       </div>
       <div class="col-11">
         <div class="exp-card-title">{{work.title}}</div>

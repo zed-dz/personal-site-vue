@@ -6,7 +6,7 @@
     <div class="exp-card-description">{{work.description}}</div>
     <div class="exp-card-projects" v-if="work.projects != []">
         <ul class="projects">
-            <li v-for="proj in work.projects" >
+            <li v-for="(proj,index) in work.projects" :key="index" >
                <strong>{{proj.name}}</strong> {{proj.description}} </li>
         </ul>
     </div>
