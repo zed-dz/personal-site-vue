@@ -11,8 +11,8 @@
             <a href="https://www.ubitech.eu/">UBITECH</a>.
           </div>
           <div class="header_buttons">
-            <router-link class="btn btn-seemore" to="/portfolio">Ok! Let's see some work</router-link>
-            <a href="./cv.pdf" class="btn btn-cv" target="_blank">1-page CV</a>
+            <router-link class="btn btn-seemore" to="/portfolio">Let's see some work!</router-link>
+            <a href="./cv.pdf" class="btn btn-cv" target="_blank">One page CV</a>
             <a href="./cv_extended.pdf" class="btn btn-cv" target="_blank">Extended CV</a>
           </div>
         </div>
@@ -78,8 +78,8 @@ export default {
 
   .header_buttons {
       display: flex;
-      justify-content: space-around;
-      margin-top: 1rem;
+      justify-content: flex-start;
+      margin: 1rem .5rem;
   }
 
    @media only screen and (max-width: 600px) {

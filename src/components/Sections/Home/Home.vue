@@ -1,9 +1,7 @@
 <template>
   <div class="home">
-    <div class="header__heading--box">
-      <HomeCard/>
-      <HomeIntro/>
-    </div>
+    <HomeCard/>
+    <HomeIntro/>
   </div>
 </template>
 <script>
@@ -15,13 +13,8 @@ export default {
   components: {
     HomeCard,
     HomeIntro
-  },
-  data() {
-    return {
-      msg: "Welcome to Your Vue.js App"
-    };
   }
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style src="./Home.css"  scoped></style>
+<style  scoped></style>

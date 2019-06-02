@@ -1,38 +1,51 @@
 <template>
-  <div id="app" class="row">
-    <Navigation class="col-xs-2"/>
-    <router-view class="col"/>
+  <div id="app">
+    <NavigationMobile class="navigation-mobile"/>
+    <div class="row">
+      <Navigation class="col-xs-2 navigation-desktop"/>
+      <router-view class="col"/>
+    </div>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import Navigation from './components/Navigation/Navigation.vue'
+import Navigation from "./components/Navigation/Navigation.vue";
+import NavigationMobile from "./components/Navigation/NavigationMobile.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    // HelloWorld, 
-    Navigation
+    Navigation,
+    NavigationMobile
   }
-}
+};
 </script>
 
 <style>
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
-
-
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.navigation-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 726px) {
+  .navigation-mobile {
+    display: block;
+  }
+
+  .navigation-desktop {
+    display: none;
+  }
 }
 </style>

@@ -4,7 +4,8 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import router from './router'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+Vue.use(require('vue-moment'));
 
 new Vue({
   router,
