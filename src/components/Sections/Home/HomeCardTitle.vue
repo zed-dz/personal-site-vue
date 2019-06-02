@@ -54,4 +54,14 @@ export default {
     margin-left: 7px;
 }
 
+@media only screen and (max-width: 726px) {
+  .bracket {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.title-text {
+    font-size: 1.8rem;
+}
+}
+
 </style>

@@ -175,4 +175,15 @@ export default {
   border: 2px solid rgb(136, 132, 176);
   background-color: rgb(136, 132, 176);
 }
+
+@media only screen and (max-width: 726px) {
+  .bcard {
+    height: 15rem;
+    width: 20rem;
+  }
+
+  .card__side {
+    width: 20rem;
+  }
+}
 </style>
