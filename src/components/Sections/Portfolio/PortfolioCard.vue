@@ -21,28 +21,22 @@
 
     <!-- <div class="bcard"> -->
     <div class="card__side card__side--front">
-      <img v-bind:src="portfolio.image"  >
+      <img v-bind:src="portfolio.image">
     </div>
 
     <div class="card__side card__side--back">
-      <div class="job__title" style="font-size: 2rem;">{{portfolio.title}}</div>
-      <div class="job__subtitle" style="font-size: 1rem;">{{portfolio.position}}</div>
+      <div class="portfolio__title">{{portfolio.title}}</div>
+      <div class="portfolio__subtitle">{{portfolio.position}}</div>
       <div class="job__subtitle" style="font-size: 1rem;">{{portfolio.description}}</div>
       <div class="exp-card-technologies" v-if="portfolio.technologies">
         <strong>Technologies:</strong> &nbsp;
         <span v-for="(technology, index) in portfolio.technologies">
-          <i v-bind:class="technology.icon"></i>
+          <i v-bind:class="technology.icon"></i> ({{technology.name}})
         </span>
         <br>
-<span v-for="(l, index) in portfolio.links" :key="index">
-          <a
-          v-bind:href="l.link"
-          class="btn btn-black"
-          target="_blank"
-        >{{l.name}}</a>
+        <span v-for="(l, index) in portfolio.links" :key="index">
+          <a v-bind:href="l.link" class="btn btn-black" target="_blank">{{l.name}}</a>
         </span>
-
-        
       </div>
     </div>
     <!-- </div> -->
@@ -85,12 +79,25 @@ export default {
   color: #333;
 }
 
+
 .bcard {
   -webkit-perspective: 150rem;
   perspective: 150rem;
   position: relative;
   height: 15rem;
   width: 25rem;
+}
+
+.portfolio__title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.portfolio__subtitle {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #f39c12;
+  font-weight: bold;
 }
 
 .card__side {
@@ -110,6 +117,7 @@ export default {
   background-color: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
   color: #333;
+   
 }
 
 .card__side img {
@@ -126,6 +134,7 @@ export default {
   -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
   height: inherit;
+  padding: .5rem;
 }
 
 .bcard:hover .card__side--front {
@@ -157,7 +166,7 @@ export default {
   border: 2px solid #333;
   padding: 0.5rem 1rem;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   background-color: transparent;
 }
 

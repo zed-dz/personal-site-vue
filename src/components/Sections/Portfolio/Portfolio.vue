@@ -34,7 +34,7 @@ export default {
           description: "Design and Implement the current site", 
           links: [
             {
-              "name": "Github", "link": ""
+              "name": "Github", "link": "https://github.com/aLe3ouLa/personal-site-vue"
             }
           ],
           technologies: [{
@@ -43,18 +43,39 @@ export default {
           }]
         },
         {
-          title: "ChildRescue (2019)", 
-          image: require("../../../assets/childrescue.png"),
-          position: "UBITECH Ltd.", 
-          description: "Design high fidelity functional mockups", 
+          title: "Ticker", 
+          image: require("../../../assets/ticker.png"),
+          position: "Side Project", 
+          description: "Development", 
           links: [
             {
-              "name": "Demonstrator", "link": "https://www.childrescue.eu/wp-content/uploads/2019/01/ChildRescue_D3.2-ChildRescue-Platform-and-Mobile-App-Early-Prototype_v1.0.pdf"
+              "name": "Github", "link": "https://github.com/aLe3ouLa/project-tickets"
             }
           ],
           technologies: [{
-            name: "Figma", 
-            icon: "fab fa-figma"
+            name: "Angular", 
+            icon: "fab fa-angular"
+          }]
+        },
+        {
+          title: "Weather App", 
+          image: require("../../../assets/weather.png"),
+          position: "Side Project", 
+          description: "Development", 
+          links: [
+            {
+              "name": "Github", "link": "https://github.com/aLe3ouLa/weather-app"
+            }
+          ],
+          technologies: [{
+            name: "HTML5", 
+            icon: "fab fa-html5"
+          },{
+            name: "CSS3", 
+            icon: "fab fa-css3"
+          },{
+            name: "JS", 
+            icon: "fab fa-js"
           }]
         },
         {
@@ -70,36 +91,63 @@ export default {
           technologies: [{
             name: "Figma", 
             icon: "fab fa-figma"
+          }]
+        },
+        {
+          title: "UINIFY (2018)", 
+          image: require("../../../assets/01_Dashboard.png"),
+          position: "Master Thesis", 
+          description: "Design and develop UInify full stack (MEAN) platform", 
+          links: [
+            {
+              "name": "Presentation", "link": "./Presentation.pdf"
+            },
+            {
+              "name": "Thesis", "link": "./uinify.pdf"
+            }
+          ],
+          technologies: [{
+            name: "Angular", 
+            icon: "fab fa-angular"
+          }, {
+            name: "Node.js", 
+            icon: "fab  fa-node-js"
+          }, {
+            name: "AdobeXD", 
+            icon: "fab  fa-adobe"
           }]
         } ,
         {
-          title: "ChildRescue (2019)", 
-          image: require("../../../assets/childrescue.png"),
-          position: "UBITECH Ltd.", 
+          title: "Smart Home Controller (2017)", 
+          image: require("../../../assets/smarthome.png"),
+          position: "ICS-FORTH", 
           description: "Design high fidelity functional mockups", 
           links: [
             {
-              "name": "Demonstrator", "link": "https://www.childrescue.eu/wp-content/uploads/2019/01/ChildRescue_D3.2-ChildRescue-Platform-and-Mobile-App-Early-Prototype_v1.0.pdf"
+              "name": "Dribble", "link": "https://dribbble.com/shots/5927180-Smart-Home-Controller-Home-Page"
+            },
+            {
+              "name": "Poster", "link": "https://womencourage.acm.org/wp-content/uploads/2017/07/womENcourage_2017_paper_23.pdf?189db0"
             }
           ],
           technologies: [{
-            name: "Figma", 
-            icon: "fab fa-figma"
+            name: "AdobeXD", 
+            icon: "fab fa-adobe"
           }]
         },
         {
-          title: "ChildRescue (2019)", 
-          image: require("../../../assets/childrescue.png"),
-          position: "UBITECH Ltd.", 
-          description: "Design high fidelity functional mockups", 
+          title: "Arkadi Monastery(2016)", 
+          image: require("../../../assets/arkadi.png"),
+          position: "ICS-FORTH", 
+          description: "Redesign and co-develop features", 
           links: [
             {
-              "name": "Demonstrator", "link": "https://www.childrescue.eu/wp-content/uploads/2019/01/ChildRescue_D3.2-ChildRescue-Platform-and-Mobile-App-Early-Prototype_v1.0.pdf"
+              "name": "Play Store", "link": "https://play.google.com/store/apps/details?id=air.gr.forth.ami.arkadi.mobile"
             }
           ],
           technologies: [{
-            name: "Figma", 
-            icon: "fab fa-figma"
+            name: "Actionscript", 
+            icon: "fab fa-adobe"
           }]
         }
       ]
