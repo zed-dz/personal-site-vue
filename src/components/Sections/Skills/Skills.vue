@@ -5,6 +5,8 @@
     <SkillsTools />
     <hr>
     <SkillsCourses />
+    <hr>
+    <SkillsArticles />
   </div>
 </template>
 
@@ -13,13 +15,15 @@
 import SkillsCoding from "./SkillsCoding.vue";
 import SkillsCourses from "./SkillsCourses.vue";
 import SkillsTools from "./SkillsTools.vue";
+import SkillsArticles from "./SkillsArticles.vue";
 
 export default {
   name: "Skills",
   components: {
     SkillsCoding,
     SkillsCourses, 
-    SkillsTools
+    SkillsTools,
+    SkillsArticles
   }
 };
 </script>
