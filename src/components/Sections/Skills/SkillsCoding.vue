@@ -2,12 +2,12 @@
   <div class="skills">
     <section>
       <div class="page-title">
-        <h2>Frontend coding</h2>
+        <h2>Frontend skills</h2>
         <div class="border"></div>
       </div>
 
       <div class="skill-section">
-        My main responsibility is the
+        I focus on
         <strong>front-end development</strong> of awesome web and mobile applications.
         I enjoy creating
         <strong>simple</strong>,

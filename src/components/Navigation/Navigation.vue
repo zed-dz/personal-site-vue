@@ -87,7 +87,7 @@ export default {
 #sidebar {
   min-width: 260px;
   max-width: 260px;
-  min-height: 100vh;
+  min-height: 100%;
   background-color: #202026;
   color: #f39c12;
 }

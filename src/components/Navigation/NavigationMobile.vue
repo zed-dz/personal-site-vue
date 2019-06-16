@@ -58,6 +58,7 @@ export default {
 .wrapper {
   display: flex;
   /* width: 100%; */
+  height: 100%;
   align-items: stretch;
 }
 

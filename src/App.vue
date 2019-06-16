@@ -40,6 +40,7 @@ export default {
   display: none;
 }
 
+
 @media only screen and (max-width: 726px) {
   .navigation-mobile {
     display: block;

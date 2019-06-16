@@ -7,7 +7,7 @@
       </div>
 
       <div class="skill-section">
-    
+        I tried to write some articles to explain some front-end concepts! This gave me the opportunity to research more and understand better key programming concepts! 
         <div class="coding-skills">
           <div
             v-for="(article, index) in articles"
@@ -15,10 +15,10 @@
           >
             {{article.name}} 
             <span v-for="a in article.l" style="margin-right: 1rem;">
-                <a v-bind:href="[a.link]">
-                    <i v-bind:class="[a.icon]"></i>
-                    </a>
-                    </span>
+              <a v-bind:href="[a.link]">
+                <i v-bind:class="[a.icon]"></i>
+              </a>
+            </span>
           </div>
         </div>
       </div>
@@ -40,11 +40,16 @@ export default {
               link:
                 "https://dev.to/ale3oula/the-quite-nice-and-fairly-accurate-introduction-to-javascript-primitive-data-types-e99"
             },
+          ]
+        },
+        {
+          name: "The Quite Nice and Fairly Accurate Intro to JavaScript Objects (pt. 2)",
+          l: [
             {
-              icon: "fab fa-medium",
+              icon: "fab fa-dev",
               link:
-                "https://dev.to/ale3oula/the-quite-nice-and-fairly-accurate-introduction-to-javascript-primitive-data-types-e99"
-            }
+                "https://dev.to/ale3oula/the-quite-nice-and-fairly-accurate-intro-to-javascript-objects-pt-2-1aaf"
+            },
           ]
         }
       ]
@@ -70,7 +75,8 @@ export default {
 
 .coding-skills {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -79,37 +85,12 @@ export default {
 }
 
 a {
-  color: #f39c12;
+  color: #602c50;
 }
 
 .fab {
   font-size: 1.6rem;
 }
 
-.html5 {
-  color: #f16529;
-}
-.css3 {
-  color: #0e57a7;
-}
 
-.angular {
-  color: #b52e31;
-}
-
-.vue {
-  color: #42b883;
-}
-
-.bootstrap {
-  color: #602c50;
-}
-
-.js {
-  color: #f0db4f;
-}
-
-.node {
-  color: #68a063;
-}
 </style>
