@@ -88,6 +88,7 @@ export default {
   min-width: 260px;
   max-width: 260px;
   min-height: 100vh;
+  
   max-height: 100%;
   background-color: #202026;
   color: #f39c12;

@@ -7,7 +7,7 @@
       </div>
 
       <div class="skill-section">
-        I tried to write some articles to explain some front-end concepts! This gave me the opportunity to research more and understand better key programming concepts! 
+        I tried to write some articles to explain some front-end concepts! This gave me the opportunity to research more and understand better key programming concepts! <br>
         <div class="coding-skills">
           <div
             v-for="(article, index) in articles"
@@ -49,6 +49,28 @@ export default {
               icon: "fab fa-dev",
               link:
                 "https://dev.to/ale3oula/the-quite-nice-and-fairly-accurate-intro-to-javascript-objects-pt-2-1aaf"
+            },
+            { icon: "fab fa-medium",
+            link: "https://levelup.gitconnected.com/the-quite-nice-and-fairly-accurate-intro-to-javascript-objects-bb2e2b718dc3"}
+          ]
+        },
+        {
+          name: "The horror-scope - Global, Local and Block scope in JS",
+          l: [
+            {
+              icon: "fab fa-dev",
+              link:
+                "https://dev.to/ale3oula/the-hor-r-o-r-scope-global-local-and-block-scope-in-js-37a1"
+            },
+          ]
+        },
+        {
+          name: "The Array Iterators Cheatsheet (JavaScript)",
+          l: [
+            {
+              icon: "fab fa-dev",
+              link:
+                "https://dev.to/ale3oula/the-array-iterators-cheatsheet-javascript-2h8e"
             },
           ]
         }

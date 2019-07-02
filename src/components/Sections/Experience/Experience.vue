@@ -28,18 +28,28 @@ export default {
     return {
       works: [
         {
+          title: "Yabbu", 
+          position: "Frontend Developer - Amsterdam, Netherlands", 
+          from:  new Date(2019, 6, 1), 
+          to: "now",
+          description: " ", 
+          projects: [],
+          technologies: ""
+        }, 
+
+        {
           title: "UBITECH Ltd", 
-          position: "UX engineer ", 
+          position: "UX engineer - Athens, GR", 
           from:  new Date(2018, 6, 6), 
-          to: new Date(),
+          to: new Date(2019, 6, 5),
           description: "My role is to write front-end components in various languages (depending on the project) as well as design user interfaces for the company's projects. ", 
           projects: [],
-          technologies: "Angular 2+, Vue.js, JavaScript, TypeScript, Thymeleaf, AngularJS, HTML5, CSS3"
+          technologies: "Angular 2+, Vue.js, JavaScript, TypeScript, Thymeleaf, HTML5, CSS3"
         }, 
 
       {
           title: "Foundation for Research and Technology - (ICS - FORTH)", 
-          position: "Undergraduate & Graduate Research Assistant - UI/UX engineer ", 
+          position: "R&D - UI/UX engineer - Heraklion, GR", 
           from: new Date(2015, 6, 6), 
           to: new Date(2018, 6, 5),
           description: "Researcher and developer in Ambient Intelligent environments. Outcomes from my work in FORTH are:",
